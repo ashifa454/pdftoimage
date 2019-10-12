@@ -9,7 +9,8 @@
   "author": "Asif Ansari <ashifa454@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.41.1"
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
   },
   "dependencies": {}
 }
