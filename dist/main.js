@@ -86,9 +86,39 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/asifansari/PdfToImage/main.js: Identifier 'PdfToImageGenerator' has already been declared (3:13)\n\n\u001b[0m \u001b[90m 1 | \u001b[39m\u001b[36mimport\u001b[39m \u001b[33mPdfToImageGenerator\u001b[39m from \u001b[32m\"./src\"\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 2 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 3 | \u001b[39m\u001b[36mexport\u001b[39m \u001b[36mconst\u001b[39m \u001b[33mPdfToImageGenerator\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   | \u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    at Parser.raise (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:6420:17)\n    at ScopeHandler.checkRedeclarationInScope (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:3776:12)\n    at ScopeHandler.declareName (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:3742:12)\n    at Parser.checkLVal (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:8159:22)\n    at Parser.parseVarId (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:10682:10)\n    at Parser.parseVar (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:10657:12)\n    at Parser.parseVarStatement (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:10479:10)\n    at Parser.parseStatementContent (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:10076:21)\n    at Parser.parseStatement (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:10009:17)\n    at Parser.parseExportDeclaration (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:11194:17)\n    at Parser.maybeParseExportDeclaration (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:11150:31)\n    at Parser.parseExport (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:11079:29)\n    at Parser.parseStatementContent (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:10113:27)\n    at Parser.parseStatement (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:10009:17)\n    at Parser.parseBlockOrModuleBlockBody (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:10585:25)\n    at Parser.parseBlockBody (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:10572:10)\n    at Parser.parseTopLevel (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:9940:10)\n    at Parser.parse (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:11447:17)\n    at parse (/Users/asifansari/PdfToImage/node_modules/@babel/parser/lib/index.js:11483:38)\n    at parser (/Users/asifansari/PdfToImage/node_modules/@babel/core/lib/transformation/normalize-file.js:168:34)\n    at normalizeFile (/Users/asifansari/PdfToImage/node_modules/@babel/core/lib/transformation/normalize-file.js:102:11)\n    at runSync (/Users/asifansari/PdfToImage/node_modules/@babel/core/lib/transformation/index.js:44:43)\n    at runAsync (/Users/asifansari/PdfToImage/node_modules/@babel/core/lib/transformation/index.js:35:14)\n    at process.nextTick (/Users/asifansari/PdfToImage/node_modules/@babel/core/lib/transform.js:34:34)\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+
+
+var PdfToImageGenerator = function PdfToImageGenerator() {};
+
+PdfToImageGenerator.prototype.convert = function () {
+  var pageNumber = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _constants__WEBPACK_IMPORTED_MODULE_0__["ALL_PAGES"];
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (PdfToImageGenerator);
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ALL_PAGES", function() { return ALL_PAGES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RANDOM_FILE_NAME", function() { return RANDOM_FILE_NAME; });
+var ALL_PAGES = "ALL_PAGES";
+/**
+ * @description Randomly Generate File Name
+ * credit https://gist.github.com/6174/6062387 @MelMacaluso
+ *
+ */
+
+var RANDOM_FILE_NAME = function RANDOM_FILE_NAME() {
+  return (Math.random().toString(36).substring(2, 6) + Math.random().toString(36).substring(2, 6)).toUpperCase();
+};
 
 /***/ })
 /******/ ]);

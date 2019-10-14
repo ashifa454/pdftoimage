@@ -4,7 +4,7 @@
   "description": "An Experiment with Library",
   "main": "index.js",
   "scripts": {
-    "build": "webpack-cli",
+    "build": "webpack-cli --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Asif Ansari <ashifa454@gmail.com>",
